@@ -1,2 +1,78 @@
 body {
+  font-family: "Inter", sans-serif;
+}
+p,
+h2 {
+  margin: 0;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.card {
+  background: #f2f5f6;
+  padding: 32px;
+  border-radius: 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.team-score-wrapper {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.team-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+.score-board {
+  display: flex;
+  justify-content: space-between;
+}
+.away {
+  flex-direction: row-reverse;
+}
+.team-block img {
+  width: 50px;
+  display: block;
+}
+.score {
+  display: flex;
+  gap: 2px;
+}
+.score p {
+  min-width: 40px;
+  text-align: left;
+}
+
+.final-score {
+  display: flex;
+  flex-direction: column;
+}
+.final-score h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.result {
+  margin-top: 24px;
+}
+.result p {
+  background: #fff;
+  padding: 8px;
+  border-radius: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+button {
+  padding: 8px;
 }

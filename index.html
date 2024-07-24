@@ -2,12 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>My First Webpage</title>
+    <title>AFL Scoreboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="custom.css" />
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <section class="wrapper">
+      <div class="card">
+        <div class="score-board">
+          <div class="team-score-wrapper">
+            <div class="team-block">
+              <div class="logo">
+                <img src="magpies.png" alt="" />
+              </div>
+              <div class="final-score">
+                <h2 id="homeTotalScore">0</h2>
+                <p><span id="hGoal">0</span>.<span id="hBehind">0</span></p>
+              </div>
+            </div>
+            <div class="score-button">
+              <button onclick="homeGoal()">Goal</button>
+              <button onclick="homeBehind()">Behind</button>
+            </div>
+          </div>
+
+          <div class="team-score-wrapper">
+            <div class="team-block away">
+              <div class="logo">
+                <img src="tigers.png" alt="" />
+              </div>
+              <div class="final-score">
+                <h2 id="awayTotalScore">0</h2>
+                <p><span id="aGoal">0</span>.<span id="aBehind">0</span></p>
+              </div>
+            </div>
+            <div class="score-button">
+              <button onclick="awayGoal()">Goal</button>
+              <button onclick="awayBehind()">Behind</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result">
+        <p>Collingwood by 10</p>
+      </div>
+    </section>
     <script src="custom.js"></script>
   </body>
 </html>
