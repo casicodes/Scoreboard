@@ -4,6 +4,8 @@ let countHomeTotal = 0;
 let countAwayGoal = 0;
 let countAwayBehind = 0;
 let countAwayTotal = 0;
+let homeTeamName = "Collingwood";
+let awayTeamName = "Richmond";
 
 function homeGoal() {
   countHomeGoal += 1;
@@ -38,9 +40,16 @@ function awayTotal() {
   displayWinner();
 }
 function displayWinner() {
+  let diff = Math.abs(countHomeTotal - countAwayTotal);
   if (countHomeTotal > countAwayTotal) {
-    console.log("Home team is winning");
+    document.getElementById(
+      "result-text"
+    ).textContent = `${homeTeamName} is winning by ${diff} pts.`;
+  } else if (countHomeTotal < countAwayTotal) {
+    document.getElementById(
+      "result-text"
+    ).textContent = `${awayTeamName} is winning by ${diff} pts.`;
   } else {
-    console.log("Away team is winning");
+    document.getElementById("result-text").textContent = `The score is level.`;
   }
 }
