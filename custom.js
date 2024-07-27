@@ -1,3 +1,23 @@
+// Todolist
+const todoList = [];
+function addTodo() {
+  let value = document.getElementById("todo-input").value;
+  todoList.push(value);
+  displayTodo();
+}
+function displayTodo() {
+  let x = "";
+  for (let i = 0; i < todoList.length; i++) {
+    const todoItem = todoList[i];
+    const todoItemHtml = `<p>${todoItem}</p>`;
+    console.log(todoItemHtml);
+    x += todoItemHtml;
+    document.querySelector(".todo-content").innerHTML = x;
+    console.log(x);
+  }
+}
+
+// Scoreboard
 let countHomeGoal = 0;
 let countHomeBehind = 0;
 let countHomeTotal = 0;
