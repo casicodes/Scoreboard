@@ -90,6 +90,7 @@ h2 {
   justify-content: end;
 }
 button {
+  font-weight: 600;
   padding: 8px;
   border-radius: 8px;
   background-color: #fff;
@@ -119,4 +120,9 @@ button:hover {
 }
 .action a:hover {
   color: #000;
+}
+@media screen and (max-width: 430px) {
+  .card {
+    padding: 20px;
+  }
 }
