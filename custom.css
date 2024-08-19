@@ -117,3 +117,6 @@ button:hover {
   align-items: center;
   gap: 2px;
 }
+.action a:hover {
+  color: #000;
+}
