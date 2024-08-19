@@ -14,7 +14,8 @@ h2 {
   gap: 24px;
 }
 .card {
-  background: #f2f5f6;
+  background: #fff;
+  border: 2px solid #e5e5e5;
   padding: 32px;
   border-radius: 20px;
   width: 320px;
@@ -34,9 +35,12 @@ h2 {
   gap: 20px;
   justify-content: space-between;
 }
-.score-board {
+.score-board,
+.action {
   display: flex;
   justify-content: space-between;
+  max-width: 320px;
+  width: 320px;
 }
 .away {
   flex-direction: row-reverse;
@@ -87,7 +91,29 @@ h2 {
 }
 button {
   padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  flex-grow: 1;
+}
+button:active {
+  border-bottom: 2px solid #e5e5e5;
+  transform: translateY(2px);
+}
+button:hover {
+  background-color: #ddf4ff;
+  border-color: #1cb0f6;
+  cursor: pointer;
 }
 .input-field {
   padding: 8px;
+}
+.action a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
