@@ -4,6 +4,7 @@ function addTodo() {
   let value = document.getElementById("todo-input").value;
   todoList.push(value);
   displayTodo();
+  document.getElementById("todo-input").value = "";
 }
 function displayTodo() {
   let x = "";
@@ -13,7 +14,6 @@ function displayTodo() {
     console.log(todoItemHtml);
     x += todoItemHtml;
     document.querySelector(".todo-content").innerHTML = x;
-    console.log(x);
   }
 }
 
